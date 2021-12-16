@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Social_Server.BusinessLogic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Share\Share.csproj" />
+    <ProjectReference Include="..\Social-Server.BusinessLogic.Core\Social-Server.BusinessLogic.Core.csproj" />
+    <ProjectReference Include="..\Social-Server.DataAccess.Core\Social-Server.DataAccess.Core.csproj" />
+  </ItemGroup>
+
+</Project>

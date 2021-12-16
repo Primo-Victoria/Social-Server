@@ -1,0 +1,4 @@
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.DataAccess.Core\bin\Debug\netcoreapp3.1\Social-Server.DataAccess.Core.exe
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.DataAccess.Core\obj\Debug\netcoreapp3.1\Social-Server.DataAccess.Core.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.DataAccess.Core\obj\Debug\netcoreapp3.1\Social-Server.DataAccess.Core.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.DataAccess.Core\obj\Debug\netcoreapp3.1\Social-Server.DataAccess.Core.AssemblyInfo.cs

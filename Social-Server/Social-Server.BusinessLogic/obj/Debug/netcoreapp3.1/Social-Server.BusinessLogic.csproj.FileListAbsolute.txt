@@ -1,0 +1,4 @@
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.BusinessLogic\bin\Debug\netcoreapp3.1\Social-Server.BusinessLogic.Core.dll
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.BusinessLogic\obj\Debug\netcoreapp3.1\Social-Server.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.BusinessLogic\obj\Debug\netcoreapp3.1\Social-Server.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Social-Server\Social-Server\Social-Server.BusinessLogic\obj\Debug\netcoreapp3.1\Social-Server.BusinessLogic.AssemblyInfo.cs

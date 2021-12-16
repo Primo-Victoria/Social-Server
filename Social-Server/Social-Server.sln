@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server", "Social-Server\Social-Server.csproj", "{D00854F9-ECBA-42C0-97C3-492008E74627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{C97438C8-EA17-4B10-9093-1F00AE13A075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{76BF913B-8827-4525-B2BD-77EBBBA3313A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{B5377B8B-3962-4EC5-9547-15E08C7C9DC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1EA53996-DD9F-469E-BA1C-C14064668D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server.BusinessLogic", "Social-Server.BusinessLogic\Social-Server.BusinessLogic.csproj", "{C23D5BC0-9611-4B1C-B36A-E412B196515A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server.BusinessLogic.Core", "Social-Server.BusinessLogic.Core\Social-Server.BusinessLogic.Core.csproj", "{C80CB176-4088-4CFD-9E0F-EA982AF41D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server.DataAccess", "Social-Server.DataAccess\Social-Server.DataAccess.csproj", "{4E5B687A-F45E-498F-AA52-8A3355797EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server.DataAccess.Core", "Social-Server.DataAccess.Core\Social-Server.DataAccess.Core.csproj", "{5546D038-89ED-4D1F-96E7-544DD6290213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Share", "Share\Share.csproj", "{380D2612-C4DC-4C0D-B3BB-B7034B003615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social-Server.Core", "Social-Server.Core\Social-Server.Core.csproj", "{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D00854F9-ECBA-42C0-97C3-492008E74627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00854F9-ECBA-42C0-97C3-492008E74627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00854F9-ECBA-42C0-97C3-492008E74627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00854F9-ECBA-42C0-97C3-492008E74627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23D5BC0-9611-4B1C-B36A-E412B196515A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23D5BC0-9611-4B1C-B36A-E412B196515A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23D5BC0-9611-4B1C-B36A-E412B196515A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23D5BC0-9611-4B1C-B36A-E412B196515A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80CB176-4088-4CFD-9E0F-EA982AF41D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80CB176-4088-4CFD-9E0F-EA982AF41D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80CB176-4088-4CFD-9E0F-EA982AF41D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80CB176-4088-4CFD-9E0F-EA982AF41D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5B687A-F45E-498F-AA52-8A3355797EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5B687A-F45E-498F-AA52-8A3355797EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5B687A-F45E-498F-AA52-8A3355797EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5B687A-F45E-498F-AA52-8A3355797EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5546D038-89ED-4D1F-96E7-544DD6290213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5546D038-89ED-4D1F-96E7-544DD6290213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5546D038-89ED-4D1F-96E7-544DD6290213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5546D038-89ED-4D1F-96E7-544DD6290213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380D2612-C4DC-4C0D-B3BB-B7034B003615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380D2612-C4DC-4C0D-B3BB-B7034B003615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380D2612-C4DC-4C0D-B3BB-B7034B003615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380D2612-C4DC-4C0D-B3BB-B7034B003615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D00854F9-ECBA-42C0-97C3-492008E74627} = {C97438C8-EA17-4B10-9093-1F00AE13A075}
+		{C23D5BC0-9611-4B1C-B36A-E412B196515A} = {76BF913B-8827-4525-B2BD-77EBBBA3313A}
+		{C80CB176-4088-4CFD-9E0F-EA982AF41D36} = {76BF913B-8827-4525-B2BD-77EBBBA3313A}
+		{4E5B687A-F45E-498F-AA52-8A3355797EFF} = {B5377B8B-3962-4EC5-9547-15E08C7C9DC0}
+		{5546D038-89ED-4D1F-96E7-544DD6290213} = {B5377B8B-3962-4EC5-9547-15E08C7C9DC0}
+		{380D2612-C4DC-4C0D-B3BB-B7034B003615} = {1EA53996-DD9F-469E-BA1C-C14064668D67}
+		{8CAD3003-F9CC-40FA-AD15-D6D49CBFA425} = {C97438C8-EA17-4B10-9093-1F00AE13A075}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F95375C0-391D-4DE9-8866-A1D3B8E974FA}
+	EndGlobalSection
+EndGlobal
