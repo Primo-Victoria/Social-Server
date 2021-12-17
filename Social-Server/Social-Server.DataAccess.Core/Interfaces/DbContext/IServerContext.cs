@@ -13,6 +13,10 @@ namespace Social_Server.DataAccess.Core.Interfaces.DbContext
         DbSet<UserRto> Users { get; set; }
 
         DbSet<UserRoleRto> UserRoles { get; set; }
+
+        DbSet<SmsRto> Sms { get; set; }
+
+        DbSet<SmsRoleRto> SmsRoles { get; set; }
         Task<int> SaveChangeAsync(CancellationToken cancellationToken = default);
 
 

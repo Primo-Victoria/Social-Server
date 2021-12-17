@@ -88,10 +88,10 @@ namespace Social_Server.BusinessLogic.Services
             return userInformation;
         }
 
-        public Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo)
+        //{
+        //    throw new NotImplementedException();
+        //}
         private async Task<UserInformationBlo> ConvertToUserInformation(UserRto userRto)
         {
             if (userRto == null) throw new ArgumentNullException(nameof(userRto));
