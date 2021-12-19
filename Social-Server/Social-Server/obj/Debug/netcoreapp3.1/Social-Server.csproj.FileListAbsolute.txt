@@ -1,0 +1,6 @@
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.csproj.AssemblyReference.cache
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.AssemblyInfoInputs.cache
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.AssemblyInfo.cs
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.csproj.CoreCompileInputs.cache
+/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Social-Server/obj/Debug/netcoreapp3.1/Social-Server.MvcApplicationPartsAssemblyInfo.cache

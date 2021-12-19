@@ -30,7 +30,7 @@ namespace Social_Server.BusinessLogic.Services
             if (user == null)
                 throw new NotFoundException($"Пользователь с почтой {email} не найден");
 
-            return await ConvertToUserInformation(user);
+            return await ConvertToUserInformationAsync(user);
         }
 
         public async Task<UserInformationBlo> AuthWithLogin(string login, string password)
@@ -39,7 +39,7 @@ namespace Social_Server.BusinessLogic.Services
 
             if (user == null) throw new Exception($"Пользователь с почтой {login} не найден");
 
-            UserInformationBlo userInformationBlo = await ConvertToUserInformation(user);
+            UserInformationBlo userInformationBlo = await ConvertToUserInformationAsync(user);
 
             return userInformationBlo;
         }
@@ -50,18 +50,16 @@ namespace Social_Server.BusinessLogic.Services
 
             if (user == null) throw new Exception("Пользователь не найден");
 
-            UserInformationBlo userInformationBlo = await ConvertToUserInformation(user);
+            UserInformationBlo userInformationBlo = await ConvertToUserInformationAsync(user);
 
             return userInformationBlo;
         }
 
         public async Task<bool> DoesExist(string numberPrefix, string number)
         {
-            UserRto user = await _context.Users.FirstOrDefaultAsync(y => y.PhoneNumberPrefix == numberPrefix && y.PhoneNumber == number);
+            bool user = await _context.Users.AnyAsync(y => y.PhoneNumberPrefix == numberPrefix && y.PhoneNumber == number);
 
-            if (user == null) throw new Exception("Номер не существует");
-
-            return true;
+            return user;
         }
 
         public async Task<UserInformationBlo> Get(int userId)
@@ -70,29 +68,58 @@ namespace Social_Server.BusinessLogic.Services
 
             if (user == null) throw new NotFoundException("Пользователь не найден");
 
-            UserInformationBlo userInfoBlo = await ConvertToUserInformation(user);
+            UserInformationBlo userInfoBlo = await ConvertToUserInformationAsync(user);
 
             return userInfoBlo;
         }
 
     public async Task<UserInformationBlo> RegisterWithPhone(string numberPrefix, string number, string password)
         {
-            UserRto user = await _context.Users.FirstOrDefaultAsync(y => y.PhoneNumberPrefix == numberPrefix && y.PhoneNumber == number);
+            bool user = await _context.Users.AnyAsync(y => y.PhoneNumberPrefix == numberPrefix && y.PhoneNumber == number);
 
-            if (user == null) throw new NotFoundException("Вы не ввели данные для регистрации");
+            if (user == true) throw new BadRequestException("Вы не ввели данные для регистрации");
 
-            if (user == _context) throw new NotFoundException("Такой пользователь уже есть");
+            UserRto newUser = new UserRto()
+            {
+                PhoneNumber = number,
+                Password = password,
+                PhoneNumberPrefix = numberPrefix
 
-            UserInformationBlo userInformation = await ConvertToUserInformation(user);
+
+            };
+
+            _context.Users.Add(newUser);
+
+            await _context.SaveChangesAsync();
+
+            UserInformationBlo userInformation = await ConvertToUserInformationAsync(newUser);
 
             return userInformation;
         }
 
-        //public Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo)
-        //{
-        //    throw new NotImplementedException();
-        //}
-        private async Task<UserInformationBlo> ConvertToUserInformation(UserRto userRto)
+        public async Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo)
+        {
+            UserRto user = await _context.Users.FirstOrDefaultAsync(y => y.PhoneNumber == number && y.PhoneNumberPrefix == numberPrefix && y.Password == password);
+
+            if (user == null) throw new NotFoundException("Такого пользователя нету");
+
+            user.Password = userUpdateBlo.Password;
+            user.FirstName = userUpdateBlo.FirstName;
+            user.Email = userUpdateBlo.Email;
+            user.Login = userUpdateBlo.Login;
+            user.LastName = userUpdateBlo.LastName;
+            user.Patronymic = userUpdateBlo.Patronymic;
+            user.Birthday = userUpdateBlo.Birthday;
+            user.IsBoy = userUpdateBlo.IsBoy;
+            user.AvatarUrl = userUpdateBlo.AvatarUrl;
+            user.PhoneNumber = userUpdateBlo.PhoneNumber;
+            user.PhoneNumberPrefix = userUpdateBlo.PhoneNumberPrefix;
+
+            UserInformationBlo userInfoBlo = await ConvertToUserInformationAsync(user);
+            return userInfoBlo;
+        }
+
+        private async Task<UserInformationBlo> ConvertToUserInformationAsync(UserRto userRto)
         {
             if (userRto == null) throw new ArgumentNullException(nameof(userRto));
 

@@ -37,12 +37,14 @@ namespace Social_Server.BusinessLogic.AutoMapperProfile
                     .ForMember(x => x.IsBoy, x => x.MapFrom(m => m.IsBoy))
                     .ForMember(x => x.AvatarUrl, x => x.MapFrom(m => m.AvatarUrl));
             CreateMap<SmsRto, SmsInformationBlo>()
-                    .ForMember(x => x.To, x => x.MapFrom(m => m.To))
-                    .ForMember(x => x.From, x => x.MapFrom(m => m.From))
+                    .ForMember(x => x.ToUserId, x => x.MapFrom(m => m.ToUserId))
+                    .ForMember(x => x.FromUserId, x => x.MapFrom(m => m.FromUserId))
                     .ForMember(x => x.Message, x => x.MapFrom(m => m.Message));
             CreateMap<SmsRto, SmsUpdateBlo>()
                    .ForMember(x => x.Message, x => x.MapFrom(m => m.Message));
-
+            CreateMap<FriendsRto, FriendInformationBlo>()
+                     .ForMember(x => x.UserIdOne, x => x.MapFrom(m => m.UserIdOne))
+                     .ForMember(x => x.UserIdTwo, x => x.MapFrom(m => m.UserIdTwo));
 
         }
     }

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gDACv//q6gLQ4GiLHZKZfWD4XHywipvdPomnkfLz/e7K4CbcF6ZzrWtP2P3d/jqEIzEH3VxtH0TKt11kn5Bg7A==",
+  "success": true,
+  "projectFilePath": "/Users/rumit/Documents/GitHub/Social-Server/Social-Server/Share/Share.csproj",
+  "expectedPackageFiles": [
+    "/Users/rumit/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/rumit/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.22/microsoft.netcore.app.host.osx-x64.3.1.22.nupkg.sha512",
+    "/Users/rumit/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

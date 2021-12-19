@@ -18,11 +18,8 @@ namespace Social_Server.DataAccess.DbContext
         public DbSet<UserRto> Users { get; set; }
         public DbSet<UserRoleRto> UserRoles { get; set; }
         public DbSet<SmsRto> Sms { get; set; }
-        public DbSet<SmsRoleRto> SmsRoles { get; set; }
+        public DbSet<FriendsRto> Friends { get; set; }
+        
 
-        public Task<int> SaveChangeAsync(CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

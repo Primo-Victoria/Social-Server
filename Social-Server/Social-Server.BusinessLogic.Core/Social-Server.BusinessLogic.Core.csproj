@@ -6,4 +6,7 @@
     <RootNamespace>Social_Server.BusinessLogic.Core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Social-Server.DataAccess.Core\Social-Server.DataAccess.Core.csproj" />
+  </ItemGroup>
 </Project>

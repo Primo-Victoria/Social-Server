@@ -8,6 +8,7 @@ namespace Social_Server.BusinessLogic.Core.Interfaces
 {
     public interface ISmsService
     {
-        Task<SmsInformationBlo> List(string message, string from, string to); 
+        Task<List<SmsInformationBlo>> GetAll(string message, string fromUserId, string toUserId);
+        Task<SmsInformationBlo> Update(string message, SmsUpdateBlo smsUpdateBlo);
     }
 }

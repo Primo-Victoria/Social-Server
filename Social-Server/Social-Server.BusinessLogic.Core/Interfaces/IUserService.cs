@@ -13,7 +13,7 @@ namespace Social_Server.BusinessLogic.Core.Interfaces
         Task<UserInformationBlo> AuthWithEmail(string email, string password);
         Task<UserInformationBlo> AuthWithLogin(string login, string password);
         Task<UserInformationBlo> Get(int userId);
-        //Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo);
+        Task<UserInformationBlo> Update(string numberPrefix, string number, string password, UserUpdateBlo userUpdateBlo);
         Task<bool> DoesExist(string numberPrefix, string number);
     }
 }
