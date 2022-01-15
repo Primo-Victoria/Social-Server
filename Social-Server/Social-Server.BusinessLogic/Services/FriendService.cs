@@ -3,13 +3,14 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Share.Exceptions;
+using Social_Server.BusinessLogic.Core.Interfaces;
 using Social_Server.BusinessLogic.Core.Models;
 using Social_Server.DataAccess.Core.Interfaces.DbContext;
 using Social_Server.DataAccess.Core.Models;
 
 namespace Social_Server.BusinessLogic.Services
 {
-	public class FriendService
+	public class FriendService : IFriendService
 	{
         private readonly IMapper _mapper;
         private readonly IServerContext _context;

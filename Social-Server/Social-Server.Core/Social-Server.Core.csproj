@@ -6,4 +6,17 @@
     <RootNamespace>Social_Server.Core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Social-Server.DataAccess\Social-Server.DataAccess.csproj" />
+    <ProjectReference Include="..\Social-Server.DataAccess.Core\Social-Server.DataAccess.Core.csproj" />
+    <ProjectReference Include="..\Social-Server.BusinessLogic.Core\Social-Server.BusinessLogic.Core.csproj" />
+    <ProjectReference Include="..\Social-Server.BusinessLogic\Social-Server.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Share\Share.csproj" />
+  </ItemGroup>
 </Project>
