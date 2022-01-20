@@ -22,6 +22,7 @@ namespace Social_Server.Controllers
         {
             _userService = userService;
         }
+
         [HttpPost("registration")]
         public async Task<ActionResult<UserInformationDto>> Register(UserIdentityDto userIdentityDto)
         {
@@ -71,11 +72,15 @@ namespace Social_Server.Controllers
             UserInformationBlo userInformation = await _userService.Get(Id);
 
             return await ConvertToUserInformationAsync(userInformation);
-
-
         }
 
+        [HttpPost("exist")]
+        public async Task<bool> DoesExist(UserIdentityDto userIdentityDto)
+        {
+            bool doesExist = await _userService.DoesExist(userIdentityDto.NumberPrefix, userIdentityDto.Number);
 
+            return doesExist;
+        }
 
         private async Task<UserInformationDto> ConvertToUserInformationAsync(UserInformationBlo userInformationBlo)
             {

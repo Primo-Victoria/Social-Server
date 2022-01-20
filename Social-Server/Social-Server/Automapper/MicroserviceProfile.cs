@@ -13,6 +13,9 @@ namespace Social_Server.Controllers
             CreateMap<UserUpdateBlo, UserUpdateDto>();
             CreateMap<UserInformationDto, UserInformationBlo>();
             CreateMap<UserUpdateDto, UserUpdateBlo>();
+            CreateMap<SmsUpdateDto, SmsUpdateBlo>();
+            CreateMap<SmsInformationDto, SmsInformationBlo>();
+            CreateMap<SmsInformationBlo, SmsInformationDto>();
         }
     }
 }
