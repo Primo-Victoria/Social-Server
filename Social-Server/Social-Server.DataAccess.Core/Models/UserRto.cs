@@ -23,6 +23,14 @@ namespace Social_Server.DataAccess.Core.Models
         public string AvatarUrl { get; set; }
         public UserRoleRto Role { get; set; }
 
+        public List<InvitationFriendRto> FriendInvitationsSent { get; set; }
+
+        public List<InvitationFriendRto> FriendInvitationsReceived { get; set; }
+
+        public List<FriendsRto> FirstFriends { get; set; }
+
+        public List<FriendsRto> SecondFriends { get; set; }
+
         [NotMapped]
         public string GetFullName
         {

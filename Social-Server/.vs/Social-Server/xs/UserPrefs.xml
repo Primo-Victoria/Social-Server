@@ -1,24 +1,24 @@
 ﻿<Properties StartupConfiguration="{D00854F9-ECBA-42C0-97C3-492008E74627}|Default">
   <MonoDevelop.Ide.ItemProperties.Api.Social-Server PreferredExecutionTarget="/Applications/Yandex.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Social-Server/Controllers/FriendController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Social-Server.BusinessLogic/Services/FriendService.cs">
     <Files>
-      <File FileName="Social-Server.DataAccess.Core/Models/SmsRto.cs" Line="13" Column="26" />
-      <File FileName="Social-Server.DataAccess.Core/Interfaces/DbContext/IServerContext.cs" Line="19" Column="48" />
-      <File FileName="Social-Server.DataAccess/DbContext/ServerContext.cs" Line="21" Column="53" />
+      <File FileName="Social-Server.DataAccess.Core/Models/SmsRto.cs" Line="10" Column="18" />
+      <File FileName="Social-Server.DataAccess.Core/Interfaces/DbContext/IServerContext.cs" Line="13" Column="20" />
+      <File FileName="Social-Server.DataAccess/DbContext/ServerContext.cs" Line="22" Column="25" />
       <File FileName="Social-Server.BusinessLogic.Core/Models/SmsUpdateBlo.cs" Line="9" Column="44" />
       <File FileName="Social-Server.BusinessLogic.Core/Models/SmsInformationBlo.cs" Line="12" Column="45" />
       <File FileName="Social-Server.BusinessLogic.Core/Interfaces/ISmsService.cs" Line="12" Column="56" />
       <File FileName="Social-Server.BusinessLogic/Services/SmsService.cs" Line="61" Column="1" />
       <File FileName="Social-Server.BusinessLogic/AutoMapperProfile/BusinessLogicProfile.cs" Line="50" Column="6" />
       <File FileName="Social-Server.DataAccess.Core/Models/UserRoleRto.cs" Line="1" Column="1" />
-      <File FileName="Social-Server.DataAccess.Core/Models/UserRto.cs" Line="7" Column="11" />
+      <File FileName="Social-Server.DataAccess.Core/Models/UserRto.cs" Line="30" Column="28" />
       <File FileName="Social-Server.BusinessLogic.Core/Models/UserInformationBlo.cs" Line="21" Column="2" />
       <File FileName="Social-Server.BusinessLogic.Core/Models/UserUpdateBlo.cs" Line="12" Column="22" />
       <File FileName="Social-Server.BusinessLogic.Core/Interfaces/IUserService.cs" Line="17" Column="64" />
       <File FileName="Social-Server.BusinessLogic/Services/UserService.cs" Line="60" Column="22" />
-      <File FileName="Social-Server.DataAccess.Core/Models/FriendsRto.cs" Line="8" Column="15" />
-      <File FileName="Social-Server.BusinessLogic/Services/FriendService.cs" Line="14" Column="1" />
-      <File FileName="Social-Server.BusinessLogic.Core/Interfaces/IFriendService.cs" Line="10" Column="1" />
+      <File FileName="Social-Server.DataAccess.Core/Models/FriendsRto.cs" Line="11" Column="29" />
+      <File FileName="Social-Server.BusinessLogic/Services/FriendService.cs" Line="46" Column="78" />
+      <File FileName="Social-Server.BusinessLogic.Core/Interfaces/IFriendService.cs" Line="12" Column="44" />
       <File FileName="Social-Server.BusinessLogic.Core/Models/FriendInformationBlo.cs" Line="2" Column="14" />
       <File FileName="Share/Exceptions/BadRequestException.cs" Line="8" Column="4" />
       <File FileName="Social-Server.Core/Models/UserIdentityDto.cs" Line="9" Column="37" />
@@ -29,11 +29,14 @@
       <File FileName="Social-Server.Core/Models/FriendInformationDto.cs" Line="7" Column="3" />
       <File FileName="Social-Server/Startup.cs" Line="40" Column="55" />
       <File FileName="Social-Server/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="Social-Server/Program.cs" Line="23" Column="54" />
+      <File FileName="Social-Server/Program.cs" Line="27" Column="1" />
       <File FileName="Social-Server/Automapper/MicroserviceProfile.cs" Line="18" Column="60" />
       <File FileName="Social-Server/Controllers/UserController.cs" Line="96" Column="63" />
       <File FileName="Social-Server/Controllers/SmsController.cs" Line="37" Column="1" />
-      <File FileName="Social-Server/Controllers/FriendController.cs" Line="20" Column="11" />
+      <File FileName="Social-Server/Controllers/FriendController.cs" Line="28" Column="1" />
+      <File FileName="Social-Server.DataAccess.Core/Models/InvitionFriendRto.cs" Line="4" Column="21" />
+      <File FileName="Social-Server.BusinessLogic.Core/Interfaces/IInvatationFriendService.cs" Line="18" Column="79" />
+      <File FileName="Share/Exceptions/ConflictException.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -42,12 +45,7 @@
             <Node name="Api" expanded="True">
               <Node name="Social-Server" expanded="True">
                 <Node name="Automapper" expanded="True" />
-                <Node name="Controllers" expanded="True">
-                  <Node name="FriendController.cs" selected="True" />
-                </Node>
-              </Node>
-              <Node name="Social-Server.Core" expanded="True">
-                <Node name="Models" expanded="True" />
+                <Node name="Controllers" expanded="True" />
               </Node>
             </Node>
             <Node name="BusinessLogic" expanded="True">
@@ -57,7 +55,20 @@
               </Node>
               <Node name="Social-Server.BusinessLogic.Core" expanded="True">
                 <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DataAccess" expanded="True">
+              <Node name="Social-Server.DataAccess" expanded="True" />
+              <Node name="Social-Server.DataAccess.Core" expanded="True">
+                <Node name="Interfaces" expanded="True">
+                  <Node name="DbContext" expanded="True" />
+                </Node>
                 <Node name="Models" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Shared" expanded="True">
+              <Node name="Share" expanded="True">
+                <Node name="Exceptions" expanded="True" />
               </Node>
             </Node>
           </Node>

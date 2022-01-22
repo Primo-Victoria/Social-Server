@@ -7,8 +7,10 @@ namespace Social_Server.DataAccess.Core.Models
 	[Table("Friends")]
 	public class FriendsRto
 	{
-		[Key] public UserRto UserIdOne { get; set; }
-		[Key] public UserRto UserIdTwo { get; set; }
+		public int UserIdOneFriend { get; set; }
+		public int UserIdTwoFriend { get; set; }
+		public UserRto UserIdOne { get; set; }
+		public UserRto UserIdTwo { get; set; }
 	}
 }
 

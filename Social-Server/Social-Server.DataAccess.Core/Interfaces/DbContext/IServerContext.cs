@@ -18,6 +18,8 @@ namespace Social_Server.DataAccess.Core.Interfaces.DbContext
 
         DbSet<FriendsRto> Friends { get; set; }
 
+        DbSet<InvitationFriendRto> FriendInvitations { get; set; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 
 

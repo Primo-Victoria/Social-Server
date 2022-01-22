@@ -19,6 +19,7 @@ namespace Social_Server.DataAccess.DbContext
         public DbSet<UserRoleRto> UserRoles { get; set; }
         public DbSet<SmsRto> Sms { get; set; }
         public DbSet<FriendsRto> Friends { get; set; }
+        public DbSet<InvitationFriendRto> InitationFriends { get; set; }
         
 
     }
