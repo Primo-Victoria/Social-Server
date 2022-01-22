@@ -21,7 +21,7 @@ namespace Social_Server.Controllers
             {
                 _friendService = friendService;
             }
-        [HttpPost("Friend")]
+        [HttpPost("friend")]
         public async Task<FriendInformationBlo> AddNewFriend(UserRto userIdOne, UserRto userIdTwo)
             {
             FriendInformationBlo friendInformation = await _friendService.AddNewFriend(userIdOne, userIdTwo);
